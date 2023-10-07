@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'YoungSerif-Regular';
+    src: url(../font/YoungSerif-Regular.ttf) format(truetype);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    text-align: justify;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFE6C7;
+    color: #454545;
+    font-family: 'YoungSerif-Regular', sans-serif;
+}
+
+header {
+    width: 89vw;
+    text-align: center;
+    color: #343434;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+header .span {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: small;
+    font-style: italic;
+}
+
+header hr {
+    margin: 0;
+    padding: 0;
+    border: 1.23px solid #454545;
+}
+
+main {
+    width: 89vw;
+    columns: 3 auto;
+    column-rule-style: double;
+    column-rule-color: #454545;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main h4 {
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+}
+
+.apod img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.apod figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+    border: 0.7px solid #454545;
+}
+
+.donki div h2:not(:first-child) {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.sounds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+audio {
+    width: 250px;
+    height: 34px;
+    background-color: #FAC788;
+    -webkit-transition:all 0.5s linear;
+    -moz-transition:all 0.5s linear;
+    -o-transition:all 0.5s linear;
+    transition:all 0.5s linear;
+    -moz-box-shadow: 2px 2px 4px 0px #454545;
+    -webkit-box-shadow:  2px 2px 4px 0px #454545;
+    box-shadow: 2px 2px 4px 0px #454545;
+    -moz-border-radius:7px 7px 7px 7px ;
+    -webkit-border-radius:7px 7px 7px 7px ;
+    border-radius:7px 7px 7px 7px ;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #FAC788;
+  }
+
+audio:hover, audio:focus, audio:active {
+    -webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    -moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 860px) {
+    main {
+        columns: 2 auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        columns: 1 auto;
+    }
+}
+
+/*
+Breakpoint	Dimensions
+Small	≥ 576px
+Medium	≥ 768px
+Large	≥ 992px
+Extra large	≥ 1200px
+*/

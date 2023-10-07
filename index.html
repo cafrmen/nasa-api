@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/app.js" defer></script>
+    <title>Caf Nasa API</title>
+</head>
+<body>
+    <header>
+        <h1>
+            NASA API's POST
+        </h1>
+        <hr>
+        <p id="today"></p>
+        <p class="span">
+            APOD, DONKI, NeoWs and Audio Files
+        </p>
+        <hr>
+    </header>
+    <main>
+        <article class="apod">
+            <h2>
+                Astronomy Picture of the Day
+            </h2>
+            <figure>
+                <img id="apodImg" src="" alt="Nasa Picture of the Day">
+                <figcaption id="apodTitle"></figcaption>
+            </figure>
+            <p id="apodInfo"></p>
+        </article>
+        <hr>
+        <article class="donki">
+            <h2>Space Weather DONKI Acronyms</h2>
+            <p>
+                CME - Coronal Mass Ejection <br>
+                GST - Geomagnetic Storm <br>
+                IPS - Interplanetary Shock <br>
+                FLR - Solar Flares <br>
+                SEP - Solar Energetic Particle <br>
+                MPC - Magnetopause Crossing <br>
+                RBE - Radiation Belt Enhacement <br>
+                HSS - High Speed Steam <br>
+            </p>
+            <hr>
+            <div id="test"></div>
+        </article>
+        <hr>
+        <article class="asteroid">
+            <h2>
+                Asteroids Passing Near Earth Today
+            </h2>
+            <h4>
+                (Refresh the page for another asteroid data)
+            </h4>
+            <p id="name"></p>
+            <p id="diameter"></p>
+            <p id="hazardous"></p>
+            <p id="kmSeconds"></p>
+            <p id="missKm"></p>
+        </article>
+        <hr>
+        <article class="sounds">
+            <h2>
+                Reload for Different Sounds!
+            </h2>
+            <audio src="#" controls></audio>
+            <audio src="#" controls></audio>
+            <audio src="#" controls></audio>
+        </article>
+    </main>
+</body>
+</html>
