@@ -95,7 +95,6 @@ img.sepia {
 }
 
 img.sepia:hover {
-    width: 101%;
     filter: sepia(0%);
     border-radius: 7px;
 }
@@ -121,10 +120,10 @@ audio {
     width: 89%;
     height: 34px;
     background-color: #FAC788;
-    -webkit-transition:all 0.5s linear;
-    -moz-transition:all 0.5s linear;
-    -o-transition:all 0.5s linear;
-    transition:all 0.5s linear;
+    -webkit-transition:all 0.7s linear;
+    -moz-transition:all 0.7s linear;
+    -o-transition:all 0.7s linear;
+    transition:all 0.7s linear;
     -moz-box-shadow: 2px 2px 4px 0px #454545;
     -webkit-box-shadow:  2px 2px 4px 0px #454545;
     box-shadow: 2px 2px 4px 0px #454545;
