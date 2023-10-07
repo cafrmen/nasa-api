@@ -72,6 +72,7 @@ main img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 3px;
 }
 
 .apod figcaption {
@@ -89,13 +90,14 @@ hr {
 img.sepia {
     width: 100%;
     filter: sepia(55%);
-    transition: 0.7s ease-in-out;
     align-items: center;
+    transition: 0.7s ease-in-out;
 }
 
 img.sepia:hover {
-    filter: sepia(0%);
     width: 101%;
+    filter: sepia(0%);
+    border-radius: 7px;
 }
 
 .donki div h2:not(:first-child) {
