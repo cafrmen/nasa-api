@@ -68,7 +68,7 @@ main h4 {
     font-size: small;
 }
 
-.apod img {
+main img {
     width: 100%;
     height: auto;
     object-fit: cover;
