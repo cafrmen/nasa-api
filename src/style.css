@@ -86,6 +86,18 @@ hr {
     border: 0.7px solid #454545;
 }
 
+img.sepia {
+    width: 100%;
+    filter: sepia(55%);
+    transition: 0.7s ease-in-out;
+    align-items: center;
+}
+
+img.sepia:hover {
+    filter: sepia(0%);
+    width: 101%;
+}
+
 .donki div h2:not(:first-child) {
     font-size: 20px;
     text-align: justify;
@@ -98,8 +110,13 @@ hr {
     gap: 7px;
 }
 
+.sounds a {
+    text-decoration: none;
+    color: #343434;
+}
+
 audio {
-    width: 100%;
+    width: 89%;
     height: 34px;
     background-color: #FAC788;
     -webkit-transition:all 0.5s linear;

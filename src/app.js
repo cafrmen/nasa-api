@@ -8,7 +8,32 @@ const asteroidDiameter = document.getElementById('diameter');
 const asteroidHazardous = document.getElementById('hazardous');
 const asteroidSpeed = document.getElementById('kmSeconds');
 const asteroidDistance = document.getElementById('missKm');
+const audioOne = document.getElementById('firstAudio');
+const audioTwo = document.getElementById('secondAudio');
+const audioThree = document.getElementById('thirdAudio');
+const audiosArray = [
+    './media/a1.mp3',
+    './media/a2.mp3',
+    './media/a3.mp3',
+    './media/a4.mp3',
+    './media/a5.mp3',
+    './media/a6.mp3',
+    './media/a7.mp3',
+    './media/a8.mp3',
+    './media/a9.mp3',
+    './media/a10.mp3',
+    './media/a11.mp3',
+    './media/a12.mp3',
+]
 
+// get the audios
+const randomIndexAudios = () => {
+    return Math.floor(Math.random() * 12);
+}
+
+audioOne.src = audiosArray[randomIndexAudios()];
+audioTwo.src = audiosArray[randomIndexAudios()];
+audioThree.src = audiosArray[randomIndexAudios()];
 
 // current date for NeoWs API
 const date = new Date();
@@ -37,6 +62,7 @@ async function nasaApod () {
 }
 nasaApod();
 
+// markdown for DONKI report
 const markdownParser = (text) => {
     const toHTML = text.replace(/^### (.*$)/gim, '<h3>$1</h3>')
                         .replace(/^## (.*$)/gim, '<h2>$1</h2>')
